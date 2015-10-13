@@ -20,14 +20,26 @@ header h1{
   height: 610px;
   background-color: #e3e3e3;
 
+}
+
+.hero h3{
+  color: #FFFFFF;
 
 }
 
+.hero p{
+  color: #FFFFFF;
+}
+#right-block{
+  float: right;
+  width: 33%;
+  padding: 115px 0 115px 0;
+}
 
 .banner{
   height: 240px;
   width: 100%;
-
+  background: #FFFFFF;
 }
 
 .banner h2{
