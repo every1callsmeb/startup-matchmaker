@@ -30,6 +30,7 @@ header h1{
 .hero p{
   color: #FFFFFF;
 }
+
 #right-block{
   float: right;
   width: 33%;
@@ -100,4 +101,3 @@ footer p{
 padding: 85px 0 85px 0;
 
 }
-
