@@ -1,0 +1,43 @@
+<h1 id="startup-matchmaker">Startup Matchmaker</h1>
+<p>Startup Matchmaker is a web app that allows project managers to create teams of talented individuals who build apps.</p>
+<h2 id="user-experience">User Experience</h2>
+<p>The app allows Users to sign up to the service. Users login to Team View. Team View lists all available users who want to be in a Team. The User is able to create a team, drag and drop other users into the Team. The User should also be able to logout. The web app also has a splash page that contains marketing materials.</p>
+<h2 id="development">Development</h2>
+<p>Use a combination of HTML, CSS, and JavaScript to build this web app.</p>
+<p>We recommend separating the concerns of your application using the Model, View, Controller paradigm.</p>
+<p>The User Model is defined by the REST API. It will be up to your team to design the Model for a Team. Teams require a title and list of users.</p>
+<p>Views can be separated into html documents, like so:</p>
+<p>index.html
+views/login.html
+views/team.html
+views/signup.html</p>
+<p>Controllers can either be handled by MV* like Angular or JavaScript Constructors and Prototypes to define the logic of the web app. Consider making Controllers for each View and Component, like so:</p>
+<p>js/components/user.js
+js/components/logout.js
+js/components/login.js
+js/components/signup.js
+js/components/team.js
+js/controllers/login-view-controller.js
+js/controllers/signup-view-controller.js
+js/controllers/team-view-controller.js</p>
+<h2 id="rest-api">REST API</h2>
+<p>The back end team has created a REST API for you to develop against. The REST API is available at <a href="http://vvvvvv.club/api/">http://vvvvvv.club/api/</a></p>
+<p>The following REST endpoints are available.</p>
+<p>POST <a href="http://vvvvvv.club/api/login">http://vvvvvv.club/api/login</a>
+GET <a href="http://vvvvvv.club/api/logout">http://vvvvvv.club/api/logout</a>
+GET <a href="http://vvvvvv.club/api/user">http://vvvvvv.club/api/user</a>
+POST <a href="http://vvvvvv.club/api/user">http://vvvvvv.club/api/user</a></p>
+<p>Documentation is available at <a href="http://vvvvvv.club/docs">http://vvvvvv.club/docs</a></p>
+<h2 id="design">Design</h2>
+<p>Screenshots of the four views are available in the comps folder.</p>
+<p>The web app should use a flexible layout for viewing on multiple monitors. Use percentages as opposed to fixed pixel widths for most sizing.</p>
+<p>You may procedurally draw the backgrounds with the Trianglify library <a href="http://qrohlf.com/trianglify/">http://qrohlf.com/trianglify/</a> or use the Trianglify Generator web app to download SVG files. <a href="http://qrohlf.com/trianglify-generator/">http://qrohlf.com/trianglify-generator/</a></p>
+<p>Colors used in the comps:</p>
+<h1 id="bc261d">BC261D</h1>
+<h1 id="dce0d9">DCE0D9</h1>
+<h1 id="851513">851513</h1>
+<h1 id="ffffff">FFFFFF</h1>
+<p>Fonts Sourced From Google Fonts:</p>
+<ul>
+<li>Open Sans</li>
+</ul>
