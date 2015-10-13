@@ -1,0 +1,103 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header{
+  background-color: #dce0d9;
+  height: 120px;
+  width: 100%;
+}
+
+header h1{
+  font-size:50px;
+  font-weight: 300;
+  color: #bc261d;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+.hero{
+  height: 610px;
+  background-color: #e3e3e3;
+
+}
+
+.hero h3{
+  color: #FFFFFF;
+
+}
+
+.hero p{
+  color: #FFFFFF;
+}
+#right-block{
+  float: right;
+  width: 33%;
+  padding: 115px 0 115px 0;
+}
+
+.banner{
+  height: 240px;
+  width: 100%;
+  background: #FFFFFF;
+}
+
+.banner h2{
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+h1{
+
+
+}
+
+h2{
+  font-size: 30px;
+
+}
+
+h3{
+  font-size: 28px;
+
+
+}
+
+
+p{
+  font-size: 22px;
+
+}
+.red-btn{
+  font-size: 25px;
+
+
+
+}
+
+.btn-small{
+  width: 305px;
+  height: 60px;
+
+}
+
+.btn-large{
+  width: 650px;
+  height: 60px;
+
+}
+
+footer{
+  color: #000000;
+  text-align: center;
+  height: 200px;
+  background: #FFFFFF;
+}
+
+footer p{
+padding: 85px 0 85px 0;
+
+}
+
