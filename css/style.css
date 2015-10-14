@@ -16,20 +16,33 @@ header h1{
   padding: 30px 0 30px 0;
 }
 
+.red-btn-small{
+  margin: 55px 0px 55px 0px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #bc261d;
+  color: #FFF;
+  width: 200px;
+}
+
 .hero{
   height: 610px;
-  background-color: #e3e3e3;
+  background-color: #000;
 
 }
 
 .hero h3{
   color: #FFFFFF;
+  margin-bottom: 50px;
 
 }
 
 .hero p{
   color: #FFFFFF;
+  line-height: 24px;
 }
+
 #right-block{
   float: right;
   width: 33%;
@@ -100,4 +113,3 @@ footer p{
 padding: 85px 0 85px 0;
 
 }
-
