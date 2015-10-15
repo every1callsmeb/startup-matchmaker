@@ -1,0 +1,1 @@
+var TeamView = new Team('');
