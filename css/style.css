@@ -119,11 +119,16 @@ header h1{
   height: 200px;
 }
 
+
 .column {
   width: 25%;
   float: left;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.front-block{
+  width: 33%;
 }
 
 /* Footer */
