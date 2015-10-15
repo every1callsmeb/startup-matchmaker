@@ -1,6 +1,57 @@
+/* General */
+
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+h1{
+
+
+}
+
+h2{
+  font-size: 30px;
+
+}
+
+h3{
+  font-size: 28px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+
+p{
+  font-size: 22px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+/* Buttons */
+
+.red-btn-small{
+  margin: 55px 0px 55px 0px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #bc261d;
+  color: #FFF;
+  width: 200px;
+  font-size: 25px;
+}
+
+.red-btn-large{
+  margin: 55px 0px 55px 0px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #bc261d;
+  color: #FFF;
+  width: 650px;
+  font-size: 25px;
+}
+
+/* Splash */
 
 header{
   background-color: #dce0d9;
@@ -16,29 +67,12 @@ header h1{
   padding: 30px 0 30px 0;
 }
 
-.red-btn-small{
-  margin: 55px 0px 55px 0px;
-  padding: 10px 20px 10px 20px;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #bc261d;
-  color: #FFF;
-  width: 200px;
-}
-
-.hero{
+#hero{
   height: 610px;
-  background-color: #000;
-
+  background: url("/img/triangle-bg.svg");
 }
 
-.hero h3{
-  color: #FFFFFF;
-  margin-bottom: 50px;
-
-}
-
-.hero p{
+#hero p{
   color: #FFFFFF;
   line-height: 24px;
 }
@@ -49,58 +83,31 @@ header h1{
   padding: 115px 0 115px 0;
 }
 
-.banner{
+#slogan-banner{
   height: 240px;
   width: 100%;
   background: #FFFFFF;
 }
 
-.banner h2{
+#slogan-banner h2{
   font-size: 48px;
   font-weight: 300;
   text-align: center;
   padding: 100px 0 100px 0;
 }
 
-h1{
-
-
+#cta-banner{
+  color: #FFF;
+  background: url("/img/triangle-bg.svg");
 }
 
-h2{
-  font-size: 30px;
-
-}
-
-h3{
-  font-size: 28px;
-
-
-}
-
-
-p{
-  font-size: 22px;
-
-}
-.red-btn{
-  font-size: 25px;
+.front-block{
+  width: 33%;
 
 
 
 }
-
-.btn-small{
-  width: 305px;
-  height: 60px;
-
-}
-
-.btn-large{
-  width: 650px;
-  height: 60px;
-
-}
+/* Footer */
 
 footer{
   color: #000000;
