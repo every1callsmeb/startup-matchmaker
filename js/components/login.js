@@ -4,4 +4,4 @@
 
 var container_div = document.getElementById('container');
 
-container_div.style.height = window.innerHeight;
+container_div.style.height = '"'+ window.innerHeight +'"';
