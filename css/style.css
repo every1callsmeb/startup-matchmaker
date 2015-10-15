@@ -1,0 +1,122 @@
+/* General */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1{
+
+
+}
+
+h2{
+  font-size: 30px;
+
+}
+
+h3{
+  font-size: 28px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+
+p{
+  font-size: 22px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+/* Buttons */
+
+.red-btn-small{
+  margin: 55px 0px 55px 0px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #bc261d;
+  color: #FFF;
+  width: 200px;
+  font-size: 25px;
+}
+
+.red-btn-large{
+  margin: 55px 0px 55px 0px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #bc261d;
+  color: #FFF;
+  width: 650px;
+  font-size: 25px;
+}
+
+/* Splash */
+
+header{
+  background-color: #dce0d9;
+  height: 120px;
+  width: 100%;
+}
+
+header h1{
+  font-size:50px;
+  font-weight: 300;
+  color: #bc261d;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+#hero{
+  height: 610px;
+  background: url("/img/triangle-bg.svg");
+}
+
+#hero p{
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+#right-block{
+  float: right;
+  width: 33%;
+  padding: 115px 0 115px 0;
+}
+
+#slogan-banner{
+  height: 240px;
+  width: 100%;
+  background: #FFFFFF;
+}
+
+#slogan-banner h2{
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+#cta-banner{
+  color: #FFF;
+  background: url("/img/triangle-bg.svg");
+}
+
+.front-block{
+  width: 33%;
+
+
+
+}
+/* Footer */
+
+footer{
+  color: #000000;
+  text-align: center;
+  height: 200px;
+  background: #FFFFFF;
+}
+
+footer p{
+padding: 85px 0 85px 0;
+
+}
