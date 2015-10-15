@@ -1,26 +1,41 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background: url("/img/triangle-bg.svg");
+  background-repeat:no-repeat;
 }
 
 header{
   background-color: #dce0d9;
-  height: 120px;
+  height: 10%;
   width: 100%;
 }
 
 header h1{
-  font-size:50px;
+  font-size:30px;
   font-weight: 300;
   color: #bc261d;
   text-align: center;
-  padding: 30px 0 30px 0;
+  padding: 10px 0px 10px 0px;
 }
 
-footer{
-  color: #000000;
+
+#container {
+  background: #dce0d9;
   text-align: center;
-  height: 200px;
-  background: #FFFFFF;
+  width: 20%;
+  margin: 0 auto;
+    padding: 12px;
+
+}
+
+nav a {color: red;}
+
+footer{
+  color: white;
+  text-align: center;
+  height: 120px;
+  width: 100%;
+
 }
 
 footer p{
