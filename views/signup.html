@@ -1,0 +1,63 @@
+<!DOCtype html>
+  <html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Startup Matchmaker</title>
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link rel="stylesheet" type="text/css" href="css/signup.css">
+
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <header>
+      <h1>Startup Matchmaker</h1>
+    </header>
+
+    <section>
+    <form name="login">
+
+<div id="choose_file">
+      <input type="file" onchange="previewFile()"><br>
+      <img src="" height="200" alt="Image preview...">
+</div>
+
+
+
+      <div id="email_form">
+          <input type="email" name="Email" value=""  placeholder="Your Email" class="input_email">
+      </div>
+
+      <div id="username">
+          <input type="text" name="userid" value=""  placeholder="User name" class="input_username">
+      </div>
+
+      <div id="password_form">
+        <input type="password" name="Password" value="" placeholder="Password" class="input_password">
+      </div>
+
+      <div id="first_name">
+        <input type="text" name="First Name" value=""  placeholder="First Name" class="input_firstname">
+      </div>
+
+      <div id="last_name">
+        <input type="text" name="Last Name" value=""  placeholder="Last Name" class="input_lastname">
+      </div>
+
+<div id="create_user">
+          <input type="button" onclick="check(this.form)" value="Create User"/>
+  </div>
+
+          <nav>
+				<a href="login.html">Already Have an Account</a>
+						</nav>
+<!-- //should the already have account be a link to sign in page not a button -->
+
+    </form>
+
+
+    <footer>
+      <p>&copy; 2015 Startup Matchmaker. Made in LA.</p>
+    </footer>
+  </body>
+  </html>
