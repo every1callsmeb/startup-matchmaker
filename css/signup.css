@@ -1,0 +1,29 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header{
+  background-color: #dce0d9;
+  height: 120px;
+  width: 100%;
+}
+
+header h1{
+  font-size:50px;
+  font-weight: 300;
+  color: #bc261d;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+footer{
+  color: #000000;
+  text-align: center;
+  height: 200px;
+  background: #FFFFFF;
+}
+
+footer p{
+padding: 85px 0 85px 0;
+
+}

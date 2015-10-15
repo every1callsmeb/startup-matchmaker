@@ -15,24 +15,35 @@
     </header>
 
     <section>
-      <form name="login">
-      Username<input type="text" name="userid"/>
-      Password<input type="password" name="pswrd"/>
+    <form name="login">
+
+
 
       <div id="email_form">
-             <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email">
-           </div>
-           <div id="Re_email_form">
-             <input type="text" name="enterEmail" value=""  placeholder="Re-enter Email" class="input_Re_email">
-           </div>
+          <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email">
+      </div>
 
+      <div id="username">
+          <input type="text" name="userid" value=""  placeholder="User name" class="input_username">
+      </div>
 
+      <div id="password_form">
+        <input type="password" name="Password" value="" placeholder="Password" class="input_password">
+      </div>
 
-      <input type="button" onclick="check(this.form)" value="Sign Up"/>
-      <input type="reset" value="Cancel"/>
+      <div id="first_name">
+        <input type="text" name="First Name" value=""  placeholder="First Name" class="input_firstname">
+      </div>
 
-      // changed Sign Up from Login 
-      </form>
+      <div id="last_name">
+        <input type="text" name="Last Name" value=""  placeholder="Last Name" class="input_lastname">
+      </div>
+
+          <input type="button" onclick="check(this.form)" value="Create User"/>
+          <input type="button" onclick="check(this.form)" value="already have an account"/>
+<!-- //should the already have account be a link to sign in page not a button -->
+
+    </form>
 
 
     <footer>
