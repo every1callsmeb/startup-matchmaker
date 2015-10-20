@@ -2,6 +2,16 @@
 
 //grab container handle
 
-var container_div = document.getElementById('container');
+var login_button = document.getElementById('login_button');
 
-container_div.style.height = window.innerHeight;
+
+
+login_button.addEventListener('click', function() {
+  
+  var user_name = document.getElementById('user_name').value;
+
+  var password = document.getElementById('password').value;
+  
+  alert(user_name + ', ' + password);
+
+});
