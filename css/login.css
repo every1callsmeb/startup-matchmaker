@@ -23,6 +23,7 @@ input {
 }
 
 header{
+  font-family: "Open Sans", sans-serif;
   background-color: #dce0d9;
   height: 60px;
   width: 100%;
