@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Startup Matchmaker</title>
-      <link rel="stylesheet" type="text/css" href="css/reset.css">
-      <link rel="stylesheet" type="text/css" href="css/signup.css">
+      <link rel="stylesheet" type="text/css" href="../css/reset.css">
+      <link rel="stylesheet" type="text/css" href="../css/signup.css">
 
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
   </head>
@@ -17,36 +17,36 @@
     <section>
     <form name="login">
 
-<div id="choose_file">
-      <input type="file" onchange="previewFile()"><br>
-      <img src="" height="200" alt="Image preview...">
-</div>
-
-
-
-      <div id="email_form">
-          <input type="email" name="Email" value=""  placeholder="Your Email" class="input_email">
+      <div>
+        <input id="choose_file" type="file" accept="image/*" onchange="loadFile(event)"><br>
+        <img id="output" src="" width="200" height="200" alt="Image preview...">
       </div>
 
-      <div id="username">
-          <input type="text" name="userid" value=""  placeholder="User name" class="input_username">
+      <div>
+        <input id="email" type="email" name="Email" value=""  placeholder="Your Email" class="input_email">
       </div>
 
-      <div id="password_form">
-        <input type="password" name="Password" value="" placeholder="Password" class="input_password">
+      <div>
+        <input id="username" type="text" name="userid" value=""  placeholder="Username" class="input_username">
       </div>
 
-      <div id="first_name">
-        <input type="text" name="First Name" value=""  placeholder="First Name" class="input_firstname">
+      <div>
+        <input  id="password" type="password" name="Password" value="" placeholder="Password" class="input_password">
       </div>
 
-      <div id="last_name">
-        <input type="text" name="Last Name" value=""  placeholder="Last Name" class="input_lastname">
+      <div>
+        <input id="first_name" type="text" name="First Name" value=""  placeholder="First Name" class="input_firstname">
       </div>
 
-<div id="create_user">
+      <div>
+        <input id="last_name" type="text" name="Last Name" value=""  placeholder="Last Name" class="input_lastname">
+      </div>
+
+      <input type="submit" id="submit" value="Submit" />
+
+<!-- <div id="create_user">
           <input type="button" onclick="check(this.form)" value="Create User"/>
-  </div>
+  </div> -->
 
           <nav>
 				<a href="login.html">Already Have an Account</a>
@@ -54,8 +54,8 @@
 <!-- //should the already have account be a link to sign in page not a button -->
 
     </form>
-
-
+    <script type="text/javascript" src="../js/xhr.js"> </script>
+    <script type="text/javascript" src="../js/components/signup.js"> </script>
     <footer>
       <p>&copy; 2015 Startup Matchmaker. Made in LA.</p>
     </footer>

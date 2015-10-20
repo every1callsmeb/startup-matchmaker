@@ -3,6 +3,7 @@
     width: 260px;
     height: 100%;
     background-color: #DBE1D9;
+    overflow: auto;
 }
 
 .menu header {
@@ -60,9 +61,7 @@ outline: none;
 }
 
 .menu ul {
-
     height: 100%;
-
 }
 
 
