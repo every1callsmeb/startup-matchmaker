@@ -34,6 +34,10 @@ input {
   box-sizing: border-box;
   font-size: 18px;
 }
+.choose_file {
+  border-radius: 8px;
+}
+
 .red_button {
   position: relative;
   height: 20px;

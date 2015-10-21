@@ -1,6 +1,6 @@
 
 
-//button to load photo avatar 
+//button to load photo avatar
 
 function previewFile() {
   var preview = document.querySelector('img');
