@@ -9,7 +9,7 @@
       <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/signup.css">
 
-
+<script src="../js/components/signup.js"></script>
 
 
   </head>
@@ -24,35 +24,33 @@
     <form name="login">
 
 <div id="choose_file">
+
+      <img id="imageav" src="" height="135" alt="Image preview...">
       <input type="file" onchange="previewFile()"><br/>
-      <img src="" height="135" alt="Image preview...">
 </div>
 
 
       <div class="email_form">
           <input type="email" name="Email" value=""  placeholder="Your Email" class="input_email">
       </div>
-          <span id="erremail" class="error">This is required</span><br/>
+
 
     <div class="email_form">
           <input type="text" name="userid" value=""  placeholder="User name" class="input_username">
       </div>
-          <span id="erruser" class="error">This is required</span><br/>
 
       <div class="email_form">
         <input type="password" name="Password" value="" placeholder="Password" class="input_password">
       </div>
-          <span id="errpassword" class="error">This is required</span><br/>
 
       <div class="email_form">
         <input type="text" name="First Name" value=""  placeholder="First Name" class="input_firstname">
       </div>
-          <span id="errfirst" class="error">This is required</span><br/>
+
 
       <div class="email_form">
         <input type="text" name="Last Name" value=""  placeholder="Last Name" class="input_lastname">
       </div>
-          <span id="errlast" class="error">This is required</span><br/>
 
 <div id="create_user">
           <input type="button"  value="Create User" class="red_button" onclick="validate();"/>
