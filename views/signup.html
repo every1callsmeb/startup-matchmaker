@@ -15,15 +15,17 @@
     </header>
 
     <section>
+    <div id="container">
     <form name="login">
 
       <div>
-        <input id="choose_file" type="file" accept="image/*" onchange="loadFile(event)"><br>
         <img id="output" src="" width="200" height="200" alt="Image preview...">
+
+        <input id="choose_file" type="file" accept="image/*" onchange="previewFile(event)"><br>
       </div>
 
       <div>
-        <input id="email" type="email" name="Email" value=""  placeholder="Your Email" class="input_email">
+        <input id="email" type="email" name="email address" value=""  placeholder="Your Email" class="input_email">
       </div>
 
       <div>
@@ -31,29 +33,27 @@
       </div>
 
       <div>
-        <input  id="password" type="password" name="Password" value="" placeholder="Password" class="input_password">
+        <input id="password" type="password" name="password" value="" placeholder="Password" class="input_password">
       </div>
 
       <div>
-        <input id="first_name" type="text" name="First Name" value=""  placeholder="First Name" class="input_firstname">
+        <input id="first_name" type="text" name="first name" value=""  placeholder="First Name" class="input_firstname">
       </div>
 
       <div>
-        <input id="last_name" type="text" name="Last Name" value=""  placeholder="Last Name" class="input_lastname">
+        <input id="last_name" type="text" name="last name" value=""  placeholder="Last Name" class="input_lastname">
       </div>
 
-      <input type="submit" id="submit" value="Submit" />
+      <div id="submit">
+      <input  type="button" value="create user" class="red_button"/>
+      </div>
 
-<!-- <div id="create_user">
-          <input type="button" onclick="check(this.form)" value="Create User"/>
-  </div> -->
-
-          <nav>
-				<a href="login.html">Already Have an Account</a>
-						</nav>
-<!-- //should the already have account be a link to sign in page not a button -->
+      <nav class="belowbutton">
+				<a href="login.html">Already have an account?</a>
+			</nav>
 
     </form>
+</div>
     <script type="text/javascript" src="../js/xhr.js"> </script>
     <script type="text/javascript" src="../js/components/signup.js"> </script>
     <footer>
