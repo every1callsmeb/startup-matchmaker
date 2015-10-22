@@ -5,7 +5,10 @@ var xhrHandler = function(){
    // the HTML verb which is the action we want to take (GET, POST)
    // options is a Javascript Object with key value pairs
 
-   this.request = function(verb, path, options){
+
+
+};
+xhrHandler.prototype.request = function(verb, path, options){
 
     // returns a promise
     return new Promise(function(resolve,reject){
@@ -18,6 +21,7 @@ var xhrHandler = function(){
       // opens the request and sets headers
       xhr.open(verb, path, true);
       xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.withCredentials = true;
 
       // handle changes in the response.
       xhr.onreadystatechange = function() {
@@ -74,8 +78,3 @@ var xhrHandler = function(){
     });
 
   };
-
-};
-
-
-window.request = xhrHandler.request;
