@@ -18,7 +18,7 @@
 //   }
 // }
 
-var loadFile = function(event) {
+var previewFile = function(event) {
   var reader = new FileReader();
   reader.onload = function(){
     var output = document.getElementById('output');
@@ -32,21 +32,13 @@ var xhr = new xhrHandler();
 var submit = document.getElementById('submit');
 submit.addEventListener('click', function(e){
   e.preventDefault();
+  var firstName = document.getElementById('first_name').value;
+  var lastName = document.getElementById('last_name').value;
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
   var email = document.getElementById('email').value;
-  var firstName = document.getElementById('first_name').value;
-  var lastName = document.getElementById('last_name').value;
 
-  var loadFile = document.getElementById('choose_file');
-  //console.log(loadFile);
-
-  encodeImage('/img/logo.png', function(encodedImage) {
-      document.getElementById('data').value = encodedImage;
-  });
-
-
-  //console.log(username, password);
+  var loadElement = document.getElementById('choose_file');
 
   var options = {
     firstName: firstName,
@@ -59,26 +51,43 @@ submit.addEventListener('click', function(e){
     }
   };
 
-
   var request = xhr.request('POST', 'http://vvvvvv.club/api/user', options).then(function(req){
     console.log(req);
   });
 });
 
-function encodeImage(src, callback) {
-    var canvas = document.createElement('canvas'),
-        ctx = canvas.getContext('2d'),
-        img = new Image();
+function previewFile() {
+  var preview = document.querySelector('img');
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
 
-      img.onload = function(){
-        canvas.width  = img.width;
-        canvas.height = img.height;
-        ctx.drawImage(img, 0, 0, img.width, img.height);
-        callback(canvas.toDataURL());
-      }
-      img.src = src;;
-}
+  reader.onloadend = function () {
+    preview.src = reader.result;
+  }
 
-// encodeImage('/img/logo.png', function(encodedImage) {
-//     document.getElementById('data').value = encodedImage;
-// });
+  if (file) {
+    reader.readAsDataURL(file);
+  } else {
+    preview.src = "";
+  }
+};
+
+//function convertImgToBase64URL(url, callback, outputFormat) {
+//  var img = new Image();
+//  img.crossOrigin = 'Anonymous';
+//  img.onload = function() {
+//    var canvas = document.createElement('CANVAS');
+//    var ctx = canvas.getContext('2d');
+//    canvas.height = this.height;
+//    canvas.width = this.width;
+//    ctx.drawImage(this,0,0);
+//    var dataURL = canvas.toDataURL('image/png');
+//    callback(dataURL);
+//    canvas = null;
+//  };
+//  img.src = url;
+//}
+
+//convertImgToBase64URL('image/png', function(base64Img){
+//    options.avatar.image = base64Img;
+//});
