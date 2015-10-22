@@ -6,26 +6,16 @@ var login_button = document.getElementById('login_button');
 
 //==== EVENTS =====
 login_button.addEventListener('click', function() {
-  grabStuff();
-
+  var username = document.getElementById('user_name').value;
+  var password = document.getElementById('password').value;
+  
+  var options = {
+    username: username,
+    password: password
+  };
+  //POST http://vvvvvv.club/api/login
+  var xhr = new xhrHandler();
+  
+  var request = xhr.request('POST', 'http://vvvvvv.club/api/login', options).then(function(req){console.log(req);});
 });
 
-//FUNCTIONS
-
-function debugFunction() {
-  var user_name = document.getElementById('user_name').value;
-  var password = document.getElementById('password').value;
-  console.log(user_name + ', ' + password);
-}
-
-function grabStuff() {
-  
-  console.log('XHR is running');
-  //parameters to pass
-  var para = {username:'JRHD', password:'JRHD'};
-  var xhr = new xhrHandler();
-  xhr.request('GET', 'http://vvvvvv.club/api/login', para);
-  
-  
-  console.log(xhr);
-}
