@@ -3,10 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Startup Matchmaker</title>
-      <link rel="stylesheet" type="text/css" href="../css/reset.css">
-      <link rel="stylesheet" type="text/css" href="../css/signup.css">
 
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+      <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/signup.css">
+
+
+
+
   </head>
 
   <body>
@@ -14,29 +20,29 @@
       <h1>Startup Matchmaker</h1>
     </header>
 
-    <section>
     <div id="container">
-    <form name="login">
+      <form name="login">
+
 
       <div>
         <img id="output" src="https://secure.gravatar.com/avatar/1bba2b1a5ada2ffb4e0534dcd6fa94c6?s=250&d=mm&r=pg" class="output" alt="Image preview...">
 
         <input id="choose_file" class="choosefile" type="file" accept="image/*" onchange="previewFile(event)"><br>
       </div>
-      </form>
 
-    <form name="myForm" method="post">
-      <div>
-        <input id="email" type="email" name="emailaddress" value=""  placeholder="Email Address" class="input_email">
-      </div>
 
-      <div>
-        <input id="username" type="text" name="userid" value=""  placeholder="Username" class="input_username">
-      </div>
+        <div>
+          <input id="email" type="email" name="email address" value=""  placeholder="Your Email" class="input_email">
+        </div>
 
-      <div>
-        <input id="password" type="password" name="password" value="" placeholder="Password" class="input_password">
-      </div>
+
+        <div>
+          <input id="username" type="text" name="userid" value=""  placeholder="Username" class="input_username">
+        </div>
+
+        <div>
+          <input id="password" type="password" name="password" value="" placeholder="Password" class="input_password">
+        </div>
 
       <div>
         <input id="first_name" type="text" name="firstname" value=""  placeholder="First Name" class="input_firstname">
@@ -56,11 +62,11 @@
 
 
 </div>
-  <script type="text/javascript">
 
-  </script>
+
     <script type="text/javascript" src="../js/xhr.js"> </script>
     <script type="text/javascript" src="../js/components/signup.js"> </script>
+
     <footer>
       <p>&copy; 2015 Startup Matchmaker. Made in LA.</p>
     </footer>
