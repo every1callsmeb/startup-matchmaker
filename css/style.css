@@ -17,29 +17,34 @@ h2{
 }
 
 h3{
-  font-size: 24px;
+  font-size: 22px;
   color: #FFFFFF;
+  font-weight: 300;
 }
 
-.right-content h3 {
-    margin-bottom: 30px;
+.right-content h3, #cta-banner h3 {
+    margin-bottom: 24px;
 }
 
 
 p{
-  font-size: 16px;
+  font-size: 15px;
   color: #FFFFFF;
   line-height: 24px;
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
 /* Buttons */
-.small-btn-container {
+.btn-container {
   margin: 35px 0px 35px 0px;
+}
+
+.btn-container a {
+  text-decoration: none;
 }
 
 .red-btn-small{
@@ -58,14 +63,14 @@ p{
 }
 
 .red-btn-large{
-  margin: 55px 0px 55px 0px;
-  padding: 10px 20px 10px 20px;
   text-align: center;
   border-radius: 5px;
   background-color: #bc261d;
   color: #FFF;
-  width: 100px;
-  font-size: 25px;
+  height: 30px;
+  width: 300px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 /* Splash */
@@ -85,7 +90,7 @@ header h1{
 }
 
 #hero{
-  height: 300px;
+  height: 280px;
 }
 
 #hero p{
@@ -116,7 +121,8 @@ header h1{
 }
 
 #cta-banner{
-  height: 200px;
+  height: 220px;
+  margin-top: 40px;
 }
 
 
@@ -132,15 +138,14 @@ header h1{
 }
 
 /* Footer */
-
-footer{
+footer {
   color: #000000;
   text-align: center;
-  height: 200px;
+  height: 100px;
   background: #FFFFFF;
 }
 
-footer p{
-padding: 85px 0 85px 0;
-
+footer p {
+  color: #000;
+  line-height: 100px;
 }

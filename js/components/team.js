@@ -13,11 +13,8 @@ var Team = function(title) {
   this.elem.appendChild(this.addForm);
   this.elem.appendChild(this.ul);
 
-
-  //this.header.innerHTML = '<h3>' + title + '</h3><div class="button add">';
   this.addForm.innerHTML = '<input type="text">'+'<div class="button add">';
 
-  //this.addForm.classList.add('close');
 
   this.addForm.querySelectorAll('.add')[0].addEventListener('click', function() {
       this.addForm.classList.remove('close');

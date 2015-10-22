@@ -5,7 +5,7 @@
     <title>Login</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+<!--    <link rel="stylesheet" type="text/css" href="../css/style.css">-->
     <link rel="stylesheet" type="text/css" href="../css/login.css">
   </head>
 
@@ -16,17 +16,20 @@
       </header>
 
       <div id="form_box">
-        <input type="text">
-        <input type="password">
 
+        <input id="user_name" type="text" placeholder="user name">
+        <input id="password" type="password" placeholder="password">
+        
+        <button id="login_button" class="red_button"> login </button>
+        
+        <div id="signup_cta"><a href="signup.html"> Don't have an account? </a> </div>
+      
       </div>
-
-
-      <p> 2015 Startup Matchmaker. Made in LA. </p>
+      
+      
+      <div id="copyright">&copy; 2015 Startup Matchmaker. Made in LA. </div>
 
     </div>
-
-
 
 
   </body>

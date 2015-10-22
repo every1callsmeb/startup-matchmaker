@@ -1,10 +1,8 @@
 .menu {
     margin-right: 20px;
-    width: 320px;
+    width: 260px;
     height: 100%;
     background-color: #DBE1D9;
-    transform: translate(0,100px);
-
 }
 
 .menu header {
@@ -21,13 +19,15 @@ float:left;
 
 .menu .add-form .button {
 width: 40px;
-height: 40px;
+height: 50px;
 background-size: cover;
 background-repeat: no-repeat;
 -webkit-transform: translate(-6px, 0px);
 transform: translate(-6px, 0px);
 color: #FFFFFF;
 background: url('/img/plus-sign.svg');
+background-size: 50px;
+margin-top: -11px;
 }
 
 
@@ -36,7 +36,7 @@ width: 100%;
 display:flex;
 padding: 8px;
 height: 44px;
-
+margin-bottom: 50px;
 -webkit-transform-origin: 50% 0%;
 transform-origin: 50% 0%;
 transition: transform 0.65s ease-in-out;
@@ -49,8 +49,10 @@ border-radius: 8px;
 border: 0 none;
 padding: 4px 10px 4px 10px;
 width: 70%;
-height: 37px;
+height: 40px;
 font-size: 16px;
+margin-left: 12px;
+margin-top: -6px;
 }
 
 input[type=text]:focus {
@@ -58,23 +60,22 @@ outline: none;
 }
 
 .menu ul {
-    display: flex;
-    flex-direction: column;
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    transition: transform 0.3s ease-in-out;
+
+    height: 100%;
+
 }
 
 
 .menu ul li {
-
     width: 100%;
     border-top: 1px solid #FFFFFF;
     padding: 12px;
     color: #CB0000;
-    margin-top: 7px;
 }
 
+li:last-child {
+  border-bottom: 1px solid #FFFFFF;
+}
 
 .menu a:link, .menu a:visited {
     color: #CBDFBD;
