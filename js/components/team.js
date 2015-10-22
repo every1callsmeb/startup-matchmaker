@@ -6,7 +6,7 @@ var Team = function(title) {
   this.ul = document.createElement('ul');
 
 
-  this.elem.classList.add('menu');
+  this.elem.classList.add('menu');  
   this.addForm.classList.add('add-form');
 
   this.elem.appendChild(this.header);
