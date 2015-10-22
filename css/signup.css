@@ -38,12 +38,16 @@ input {
  box-sizing: border-box;
  font-size: 18px;
 }
-.choose_file {
-  padding-top: 0px;
+
+.choosefile {
+  color: #DCE0D9;
+  margin: -15px 0px 20px 0px;
 }
 
 .output {
- border-radius: 8px;
+ border-radius: 100px;
+ width: 200px;
+ height: 200px;
 }
 
 .red_button {
@@ -54,7 +58,6 @@ input {
  background: #bc261d ;
  border: 0;
  border-radius: 8px;
- margin: 0px 0px 0px 0px;
  width: 100%;
  color: white;
 }
