@@ -38,6 +38,12 @@ input {
   border-radius: 8px;
 }
 
+.error {
+  color: red;
+  font-size: 10px;
+  visibility: hidden;
+}
+
 .red_button {
   position: relative;
   height: 20px;

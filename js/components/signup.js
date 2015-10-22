@@ -17,3 +17,18 @@ function previewFile() {
     preview.src = "";
   }
 }
+
+
+function validate() {
+
+  var spans = document.getElementsByTagName("span")''
+  var Email = document.login.Email;
+  if(Email.value === "")
+  {
+
+      spans[0].setAttribute("style","visability:visable");
+
+  }
+
+
+}
