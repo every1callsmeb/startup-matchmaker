@@ -1,17 +1,22 @@
 var Team = function(title) {
 
   this.elem = document.createElement('div');
+  this.team = document.createElement('div');
   this.header = document.createElement('header');
   this.addForm = document.createElement('div');
   this.ul = document.createElement('ul');
+  this.teamlist = document.createElement('ul');
 
 
-  this.elem.classList.add('menu');  
+  this.elem.classList.add('menu');
+  this.team.classList.add('team-container');
   this.addForm.classList.add('add-form');
+  this.teamlist.setAttribute('id','people');
 
   this.elem.appendChild(this.header);
   this.elem.appendChild(this.addForm);
   this.elem.appendChild(this.ul);
+  this.team.appendChild(this.teamlist);
 
   this.addForm.innerHTML = '<input type="text">'+'<div class="button add">';
 
@@ -41,14 +46,38 @@ var Team = function(title) {
 
 
   document.getElementById('TeamMenu').appendChild(this.elem)
+  document.getElementById('TeamMenu').appendChild(this.team)
 
 };
 
 Team.prototype.addItem = function(item) {
     var listItem = document.createElement('li');
     listItem.innerHTML = item.content;
+    listItem.setAttribute('ondragover','return false'); //this isn't the right way
     this.ul.appendChild(listItem);
+    // li.addEventListener("ondragover",  //figure out how to write this correctly
 };
+
+//// team section
+
+var candidates  = ["candidate1", "candidate2", "candidate3", "candidate4"];
+
+Team.prototype.create_candidates = function(){
+    var items = document.getElementById("people");
+for (var i = 0; i < candidates.length; i++ ) {
+        var item = document.createElement("li");
+        item.innerHTML = "<div class='newperson' draggable='true'>"+candidates[i]+"</div>";
+        items.appendChild(item);
+    }
+};
+
+// Team.prototype.addTeam = function(item) {
+//     var teamItem = document.createElement('li');
+//     teamItem.innerHTML = item.content;
+//     this.teamList.appendChild(teamItem);
+// };
+
+//// end team section
 
 Team.prototype.createList = function(list) {
     list.forEach(function(item){
