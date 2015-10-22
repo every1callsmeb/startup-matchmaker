@@ -5,3 +5,5 @@ var user;
 fetchJSON.request("GET", "http://vvvvvv.club/api/user").then(function(req){
   console.log(req);
 });
+
+TeamView.create_candidates();
