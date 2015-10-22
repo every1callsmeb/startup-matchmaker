@@ -73,3 +73,19 @@ section .exit {
   justify-content: flex-start;
   z-index: 2;
 }
+
+.team-container {
+  height: 100%;
+  width: 80%;
+  overflow: auto;
+}
+
+
+.newperson {
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  float: left;
+  margin: 20px 20px 20px 20px;
+  border-radius: 5px;
+}
