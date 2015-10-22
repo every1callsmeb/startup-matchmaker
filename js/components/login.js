@@ -6,7 +6,8 @@ var login_button = document.getElementById('login_button');
 
 //==== EVENTS =====
 login_button.addEventListener('click', function() {
-  debugFunction();
+  grabStuff();
+
 });
 
 //FUNCTIONS
@@ -18,6 +19,13 @@ function debugFunction() {
 }
 
 function grabStuff() {
-  var request = new xhrHandler();
   
+  console.log('XHR is running');
+  //parameters to pass
+  var para = {username:'JRHD', password:'JRHD'};
+  var xhr = new xhrHandler();
+  xhr.request('GET', 'http://vvvvvv.club/api/login', para);
+  
+  
+  console.log(xhr);
 }
