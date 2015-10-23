@@ -25,43 +25,18 @@ header h1 {
  width: 20%;
  margin: 0 auto;
  padding: 12px;
->>>>>>> 751f3e946de3176f552ff6c5b3433f02d2b9c6fc
 }
+
 input {
   position: relative;
   padding: 10px;
   margin: 10px 0 10px 0;
   width: 100%;
-  height: 30px;
+  height: 31px;
   border-radius: 8px;
   border: 0;
   box-sizing: border-box;
   font-size: 18px;
-}
-.red_button {
-  position: relative;
-  height: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 100;
-  background: #bc261d;
-  border: 0;
-  border-radius: 8px;
-  margin: 0px 0px 0px 0px;
-  width: 100%;
-  color: white;
-
-
-input {
- position: relative;
- padding: 10px;
- margin: 10px 0 10px 0;
- width: 100%;
- height: 31px;
- border-radius: 8px;
- border: 0;
- box-sizing: border-box;
- font-size: 18px;
 }
 
 .choosefile {
@@ -70,27 +45,28 @@ input {
 }
 
 .output {
- border-radius: 100px;
- width: 200px;
- height: 200px;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .red_button {
- position: relative;
- font-family: "Open Sans", sans-serif;
- font-size: 12px;
- font-weight: 400;
- background: #bc261d ;
- border: 0;
- border-radius: 8px;
- width: 100%;
- color: white;
+  position: relative;
+  height: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  background: #bc261d;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  color: white;
+  cursor: pointer;
 }
 
 nav a {
  color: red;
  text-decoration: none;
-
 }
 
 .belowbutton {
