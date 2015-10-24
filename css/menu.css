@@ -98,3 +98,41 @@ li:last-child {
   float: left;
   margin-right: 7px;
 }
+
+nav {
+  display: flex;
+  border: 1px solid #FFFFFF;
+  width: 350px;
+  height: 260px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 8px 10px;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+}
+
+div#dragged.drag {
+  text-align: center;
+  padding-left: 50px;
+}
+.drag img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin: 5px 5px 5px 5px;
+}
+
+div#dragged.droppable {
+  height: 50px;
+  width: 50px;
+}
+
+.droppable img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  display: flex;
+  margin: 3px;
+}
