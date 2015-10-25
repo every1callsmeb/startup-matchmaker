@@ -19,5 +19,4 @@ login_button.addEventListener('click', function() {
   var request = xhr.request('POST', 'http://vvvvvv.club/api/login', options).then(function(req){console.log(req);});
 });
 
-//ERROR HANDLING
 
