@@ -45,32 +45,11 @@ var Team = function(title) {
 
 Team.prototype.addItem = function(item) {
     var listItem = document.createElement('li');
-<<<<<<< HEAD
-    listItem.innerHTML = item.content;
-<<<<<<< HEAD
-    listItem.setAttribute('ondragover','return false');
-    listItem.setAttribute('ondrop',"doDrop(event)")//this isn't the right way
-=======
-    listItem.classList.add('droppable');
->>>>>>> refs/remotes/origin/master
-    this.ul.appendChild(listItem);
-};
-
-
-function doDrop(event)
-{
-  alert(event.target.outerHTML)
-}
-//// team section
-
-var candidates  = ["candidate1", "candidate2", "candidate3", "candidate4"];
-=======
     listItem.innerHTML = "<div class='droppable'>"+item.content+"</div>";
     //listItem.classList.add('droppable');
     this.ul.appendChild(listItem);
 };
 
->>>>>>> refs/remotes/origin/master
 
 Team.prototype.create_candidates = function(candidates){
     var items = document.getElementById("people");
