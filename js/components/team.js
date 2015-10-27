@@ -53,59 +53,56 @@ Team.prototype.addItem = function(item) {
 
 Team.prototype.create_candidates = function(candidates){
     var items = document.getElementById("people");
-      candidates.forEach(function(val,i){
-        var item = document.createElement("nav");
-        item.innerHTML = "<div>"+"<img src='http://vvvvvv.club/"+val.avatar.image+"'> <br>@"+val.firstName+"</div>";
-        // item.id = 'dragged';
+      for (var i = 0; i < candidates.length; i++ ) {
+        var item = document.createElement('nav');
+
+        item.innerHTML = "<div>"+"<img src='http://vvvvvv.club/"+candidates[i].avatar.image+"'> <br>@"+candidates[i].firstName+"</div>";
+        item.id = 'dragged';
         item.className = 'drag';
-        item.draggable = true;
+        item.setAttribute('draggable', 'true');
+        item.setAttribute('ondragstart', 'event.dataTransfer.setData("text/plain",null)');
+        items.appendChild(item);
 
+          var dragDrop = document.getElementById('dragged');
 
-          // var item = document.getElementById('dragged');
-            item.addEventListener("dragstart", function(ev){
+            dragDrop.addEventListener("dragstart", function( ev ){
               dragged = event.target;
                         event.target.style.opacity = .5;
-              ev.dataTransfer.setData("text/plain",item);
-            });
+                        });
 
-            item.addEventListener("dragend", function( event ) {
-                    event.preventDefault();
+            dragDrop.addEventListener("dragend", function( ev ) {
                         event.target.style.opacity = "";
                         }, false);
 
-          item.addEventListener("dragover", function( event ) {
+            document.addEventListener("dragover", function( ev ) {
                         event.preventDefault();
-                        console.log(event.target);
-                event.dataTransfer.dropEffect = "move";
-                }, false);
+                        }, false);
 
-          item.addEventListener("dragenter", function( event ) {
-                event.preventDefault();
+            document.addEventListener("dragenter", function( ev ) {
                 if ( event.target.className == "droppable" ) {
                      event.target.style.background = "";
                   }
                     }, false);
 
-          item.addEventListener("dragleave", function( event ) {
+            document.addEventListener("dragleave", function( ev ) {
                 if ( event.target.className == "droppable" ) {
                      event.target.style.background = "";
                      }
                        }, false);
 
-            item.addEventListener("drop", function( event ) {
+            document.addEventListener("drop", function( ev ) {
                   event.preventDefault();
-                  console.log(item)
+              if ( event.target.className == "droppable" ) {
+                  dragDrop.parentNode.removeChild( dragDrop );
                   console.log(event.target)
-              if ( event.target.className === "droppable" ) {
-                  // item.parentNode.removeChild( item );
-                  // item.classList.remove('drag');
-                  // item.classList.add('droppable');
-                var image = item.querySelector('img');
+                  dragDrop.classList.remove('drag');
+                  dragDrop.classList.add('droppable');
+                  var image = dragDrop.querySelector('img');
                   event.target.appendChild( image );
               }
             }, false);
-      items.appendChild(item);
-    });
+
+    }
 };
 
 
