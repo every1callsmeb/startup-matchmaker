@@ -53,11 +53,17 @@ var Team = function(title) {
 Team.prototype.addItem = function(item) {
     var listItem = document.createElement('li');
     listItem.innerHTML = item.content;
-    listItem.setAttribute('ondragover','return false'); //this isn't the right way
+    listItem.setAttribute('ondragover','return false');
+    listItem.setAttribute('ondrop',"doDrop(event)")//this isn't the right way
     this.ul.appendChild(listItem);
     // li.addEventListener("ondragover",  //figure out how to write this correctly
 };
 
+
+function doDrop(event)
+{
+  alert(event.target.outerHTML)
+}
 //// team section
 
 var candidates  = ["candidate1", "candidate2", "candidate3", "candidate4"];
