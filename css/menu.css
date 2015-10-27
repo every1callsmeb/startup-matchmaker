@@ -113,9 +113,9 @@ nav {
   font-weight: bold;
 }
 
-div#dragged.drag {
+nav.drag {
   text-align: center;
-  padding-left: 50px;
+  padding-left: 65px;
 }
 .drag img {
   height: 200px;
